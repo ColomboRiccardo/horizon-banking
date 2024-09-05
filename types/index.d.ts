@@ -2,7 +2,9 @@
 
 declare type SearchParamProps = {
   params: { [key: string]: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: {
+    [key: string]: string | string[] | undefined;
+  };
 };
 
 // ========================================
@@ -98,7 +100,10 @@ declare type AccountTypes =
   | "investment"
   | "other";
 
-declare type Category = "Food and Drink" | "Travel" | "Transfer";
+declare type Category =
+  | "Food and Drink"
+  | "Travel"
+  | "Transfer";
 
 declare type CategoryCount = {
   name: string;
@@ -202,7 +207,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;

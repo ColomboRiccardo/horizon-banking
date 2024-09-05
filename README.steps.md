@@ -1,0 +1,3 @@
+- Install chart.js and react-chartjs-2 for the graphs
+- Import chart in a document and use the element you want
+- It's a client side component, so we need to put it in its own component and add "use client" on top of it
